@@ -5,4 +5,6 @@ def check_pwd(pwd):
         return False
     if not any(character.islower() for character in pwd):
         return False
+    if not any(character.isupper() for character in pwd):
+        return False
     return True
