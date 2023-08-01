@@ -26,6 +26,10 @@ class TestCase(unittest.TestCase):
         pwd = "OregonStateUniversityAaronAnderson7!"
         self.assertFalse(check_pwd(pwd))
 
+    def test_5(self):
+        pwd = "ANDERSON7!"
+        self.assertFalse(check_pwd(pwd))
+
 
 if __name__ == '__main__':
     unittest.main()
