@@ -13,7 +13,10 @@ class TestCase(unittest.TestCase):
     def test_1(self):
         pwd = ""
         self.assertFalse(check_pwd(pwd))
-        check_pwd(pwd)
+
+    def test_2(self):
+        pwd = ""
+        self.assertEqual(check_pwd(pwd), False)
 
 
 if __name__ == '__main__':
