@@ -18,6 +18,10 @@ class TestCase(unittest.TestCase):
         pwd = ""
         self.assertEqual(check_pwd(pwd), False)
 
+    def test_3(self):
+        pwd = "Anderson7!"
+        self.assertTrue(check_pwd(pwd))
+
 
 if __name__ == '__main__':
     unittest.main()
